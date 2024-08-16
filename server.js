@@ -15,7 +15,7 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch(err => console.error("MongoDB connection error:", err));
 
 // Import routes
-const bookRouter = require('./routes/v1');
+const bookRouter = require('./routes/books');
 
 // Adding /books to before all routes
 app.use('/books', bookRouter);
