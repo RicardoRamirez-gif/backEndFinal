@@ -18,7 +18,7 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 const bookRouter = require('./routes/v1');
 
 // Adding /books to before all routes
-app.use('/v1', bookRouter);
+app.use('/books', bookRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
